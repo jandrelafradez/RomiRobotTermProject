@@ -1,6 +1,6 @@
 # **ME 405 Romi Term Project Portfolio**
 This repository outlines our Romi term project that was completed by Roy Cabrera and Jandre Lafradez during the Winter 2025 Quarter at Cal Poly, SLO.  
-![lebron](lbjtest.jpg)
+![lebron](lbj.pdf.webp)
 ## **Table of Contents**
 -Required Materials  
 -Romi Assembly  
