@@ -4,9 +4,9 @@ This repository outlines our Romi term project from the Winter 2025 Quarter at C
 -Required Materials  
 -Romi Assembly  
 -Wiring Diagram  
--State Transition Diagram
--Finite State Machines
--[Explanations of each class](#Explanations of each class)  
+-State Transition Diagram  
+-Finite State Machines  
+-[Explanations of each class](#explanations-of-each-class)  
   a)  
   b)  
   c)
