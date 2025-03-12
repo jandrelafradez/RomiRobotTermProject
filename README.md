@@ -16,8 +16,8 @@ This repository outlines our Romi term project that was completed by Roy Cabrera
 ## **Required Materials**  
 | Qty | Part Name |  
 |----|------------------|  
-|4|M2.5x8mm Standoff|  
-|4|M2.5x10mm Standoff|
+|6|M2.5x8mm Standoff|  
+|8|M2.5x10mm Standoff|
 |4|M2.5x30mm Standoff|
 |4|M2.5x6mm Socket Head Cap Screw|
 |4|M2.5x8mm Socket Head Cap Screw|
