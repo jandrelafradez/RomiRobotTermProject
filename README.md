@@ -67,7 +67,8 @@ The *linesensor.py* file allows us to calibrate our IR sensors to differentiate 
 The *bumper.py* file contains a class that disables efforts to our motor once the buttons are depressed. This causes our Romi to pivot and is vital to the wall portion of the game track. 
 ### *main py*
 The *main.py* file is where all of the previously mentioned files are able to come together and communicate to one another. The user is also able to set Romi's base motor speed and adjust proportional-integral-derivative (PID) gain values in order to optomize Romi's performance for the game track.   
-##**Game Track and Results**  
+## **Game Track and Results**  
+
 ![Game Track](game_trackv3.png)
 
 
