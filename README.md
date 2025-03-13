@@ -37,6 +37,7 @@ This repository outlines our Romi term project that was completed by Roy Cabrera
 
 ## **Romi Assembly**
 ## **Wiring Diagram**
+![Wiring Diagram](wiringdiagramv2.png)
 ## **State Transition Diagram**
 ### **Motor Class**
 ### **IR Sensor Class**
