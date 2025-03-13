@@ -49,13 +49,13 @@ This repository outlines our Romi term project that was completed by Roy Cabrera
 ## **IR Sensor Class**
 ## **Finite State Machines**
 ## **Explanations of each class**
-## **motor.py**
-## **Encoder.py**
-## **cotask.py**
-## **task_share.py**
-## **centroid.py**
-## **linesensor.py**
-## **bumper.py**
-## **main.py**
+### **motor.py**
+### **Encoder.py**
+### **cotask.py**
+### **task_share.py**
+### **centroid.py**
+### **linesensor.py**
+### **bumper.py**
+### **main.py**
 
 
