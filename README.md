@@ -60,7 +60,7 @@ The *task_share.py* file depicts a class that allows share and queue variables t
 ### *centroid py*
 The *centroid.py* file contains a class that allows our infared (IR) sensors to create a centroid in order to calculate where the middle of the black line is at while our Romi follows the game track. 
 ### *linesensor py*
-The *Linesensor.py* file allows us to calibrate our IR sensors to differentiate between white and black colors. It also computes an error based off our PID values that were determined by the user and the differentiation from the centroid. This error allows for motor speed for each wheel to be corrected in order to keep Romi on a line. 
+The *linesensor.py* file allows us to calibrate our IR sensors to differentiate between white and black colors. It also computes an error based off our PID values that were determined by the user and the differentiation from the centroid. This error allows for motor speed for each wheel to be corrected in order to keep Romi on a line. 
 ### *bumper py*
 The *bumper.py* file contains a class that disables efforts to our motor once the buttons are depressed. This causes our Romi to pivot and is vital to the wall portion of the game track. 
 ### *main py*
