@@ -40,6 +40,7 @@ This repository outlines our Romi term project that was completed by Roy Cabrera
 |1|[IR Reflectance Sensor](https://www.pololu.com/product/4248)|
 |1|[Left Bump Sensor](https://www.pololu.com/product/3673)|
 |1|[Right Bump Sensor](https://www.pololu.com/product/3674)|
+|1|[USB-Mini-B to USB-C Cable](https://www.amazon.com/dp/B08GG47H8T?th=1)|
 
 ## **Romi Assembly**
 ## **Wiring Diagram**
