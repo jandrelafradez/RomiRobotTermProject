@@ -67,7 +67,14 @@ The *linesensor.py* file allows us to calibrate our IR sensors to differentiate 
 The *bumper.py* file contains a class that disables efforts to our motor once the buttons are depressed. This causes our Romi to pivot and is vital to the wall portion of the game track. 
 ### *main py*
 The *main.py* file is where all of the previously mentioned files are able to come together and communicate to one another. The user is also able to set Romi's base motor speed and adjust proportional-integral-derivative (PID) gain values in order to optomize Romi's performance for the game track.   
-## **Game Track and Results**  
+## **Game Track and Results**
+### **Game Track and Strategy**
+**Start-Diamond**  
+The game track requires IR sensors for a majority of the path. For our purposes, we have hard coded our encoder values right before the diamond path to get Romi to "turn off" line sensor mode. During this portion, Romi has been manually programmed to go forard at an effort of 30% for 1.5 seconds.   
+**Path Following: Checkpoints 1-4**  
+Once checkpoint 1 is hit, Romi then goes back to line sensing mode until Checkpoint 4, right before the grid. During this portion, Romi utilizes PID control in order to account for corrections and stay within the line.   
+**Grid Portion: Checkpoints 4-5**  
+Additionally, once at Checkpoint 4, we switched to using the IMU in order to track our heading to keep our Romi straight (180 degrees away from our start position heading). We then hardcoded encoder tick counts that allowed our robot to go straight until the end of the grid where it would then pivot to reach Checkpoint 5. 
 
 ![Game Track](game_trackv3.png)
 
