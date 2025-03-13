@@ -9,14 +9,14 @@ This repository outlines our Romi term project that was completed by Roy Cabrera
 4) [State Transition Diagram](#state-transition-diagram)  
 5) [Finite State Machines](#finite-state-machines)  
 6) [Explanations of each class](#explanations-of-each-class)  
-  a)motor.py  
-  b)Encoder.py  
-  c)cotask.py
-  d)task_share.py
-  e)centroid.py
-  f)linesensor.py
-  g)bumper.py
-  h)main.py
+  a)[motor.py](#motor.py)    
+  b)[Encoder.py](#encoder.py)    
+  c)[cotask.py](#cotask.py)  
+  d)[task_share.py](#task_share.py)  
+  e)[centroid.py](#centroid.py)  
+  f)[linesensor.py](#linesensor.py)  
+  g)[bumper.py](#bumper.py)  
+  h)[main.py](#main.py)  
 
 ## **Required Materials**  
 | Qty | Part Name |  
