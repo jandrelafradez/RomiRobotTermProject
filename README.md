@@ -45,7 +45,11 @@ This repository outlines our Romi term project that was completed by Roy Cabrera
 
 ## **Romi Assembly**
 **Initial Steps**  
-To learn how to attach the attach the Shoe of Brian, nucleo, encoders, motors, and IMU, please refer to the attached [Romi Assembly](RomiAssembly.pdf) that was handed to us during lab.
+To learn how to attach the attach the Shoe of Brian, nucleo, encoders, motors, and IMU, please refer to the attached [Romi Assembly](RomiAssembly.pdf) file that was handed to us during lab.
+
+**Attaching the IR Sensor**
+**Attaching the Bump Sensor**
+
 ## **Wiring Diagram**  
 The following wiring diagram shows how we were able to wire our power, bump sensors, IR sensor, IMU, encoders, and motors to our Nucleo L476RG. Please note that for ease of view, each connected part has its own respective color. However, ground and power remain black and red for each part it applies to.  
 
