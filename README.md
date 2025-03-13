@@ -50,12 +50,20 @@ This repository outlines our Romi term project that was completed by Roy Cabrera
 ## **Finite State Machines**
 ## **Explanations of each class**
 ### *motor py*
+The *motor.py* file defines a class for running the Romi motors and setting the duty cycle for each motor. It enables the motors to spin according to the specified duty cycle.
 ### *Encoder py*
+The *encoder.py* file contains the class to read the encoder of both the left and right wheel. It contains methods to update the encoders and returns the position and delta values, which can be used to determine the velocity of each wheel. The end of the class also contains a method to zero Romi's position. 
 ### *cotask py*
+The *cotask.py* file contains the class and the methods to run the scheduler, which runs the tasks based on the specified period and priority of each task specified by the user that were described in the [State Transition Diagram](#state-transition-diagram) portion previously mentioned. These periods and priorities are also set by the user in the [main py](#main-py) file.
 ### *task_share py*
+The *task_share.py* file depicts a class that allows share and queue variables to be created. This allows data to be shared between share the wheels and user control tasks.
 ### *centroid py*
+The *centroid.py* file contains a class that allows our infared (IR) sensors to create a centroid in order to calculate where the middle of the black line is at while our Romi follows the game track. 
 ### *linesensor py*
+The *Linesensor.py* file allows us to calibrate our IR sensors to differentiate between white and black colors. It also computes an error based off our PID values that were determined by the user and the differentiation from the centroid. This error allows for motor speed for each wheel to be corrected in order to keep Romi on a line. 
 ### *bumper py*
+The *bumper.py* file contains a class that disables efforts to our motor once the buttons are depressed. This causes our Romi to pivot and is vital to the wall portion of the game track. 
 ### *main py*
+The *main.py* file is where all of the previously mentioned files are able to come together and communicate to one another. The user is also able to set Romi's base motor speed and adjust proportional-integral-derivative (PID) gain values in order to optomize Romi's performance for the game track.   
 
 
