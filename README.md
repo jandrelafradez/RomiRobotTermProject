@@ -1,7 +1,7 @@
 # **ME 405 Romi Term Project Portfolio**
 This repository outlines our Romi term project that was completed by Roy Cabrera and Jandre Lafradez during the Winter 2025 Quarter at Cal Poly, San Luis Obispo. Code files are attached above, with explanations of each file to follow later within this section. Hardware components are also attached with their links for anyone interested in recreating their own Romi project.   
   
-![Romi](diagonalv3.jpg)
+![Romi](romi_diagonalview.jpg)
 ## **Table of Contents**
 1) [Required Materials](#required-materials)  
 2) [Romi Assembly](#romi-assembly)  
@@ -9,9 +9,14 @@ This repository outlines our Romi term project that was completed by Roy Cabrera
 4) [State Transition Diagram](#state-transition-diagram)  
 5) [Finite State Machines](#finite-state-machines)  
 6) [Explanations of each class](#explanations-of-each-class)  
-  a)  
-  b)  
-  c)
+  a)motor.py  
+  b)Encoder.py  
+  c)cotask.py
+  d)task_share.py
+  e)centroid.py
+  f)linesensor.py
+  g)bumper.py
+  h)main.py
 
 ## **Required Materials**  
 | Qty | Part Name |  
@@ -38,12 +43,20 @@ This repository outlines our Romi term project that was completed by Roy Cabrera
 
 ## **Romi Assembly**
 ## **Wiring Diagram**
-![Wiring Diagram](wiringdiagramv2.png)
+![Wiring Diagram](wiringdiagram.png)
 ## **State Transition Diagram**
 ### **Motor Class**
 ### **IR Sensor Class**
 ## **Finite State Machines**
 ## **Explanations of each class**
+### **motor.py**
+### **Encoder.py**
+### **cotask.py**
+### **task_share.py**
+### **centroid.py**
+### **linesensor.py**
+### **bumper.py**
+### **main.py**
 
 
 
