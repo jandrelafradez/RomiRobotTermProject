@@ -69,19 +69,24 @@ The *bumper.py* file contains a class that disables efforts to our motor once th
 The *main.py* file is where all of the previously mentioned files are able to come together and communicate to one another. The user is also able to set Romi's base motor speed and adjust proportional-integral-derivative (PID) gain values in order to optomize Romi's performance for the game track.   
 ## **Game Track and Results**
 ### **Game Track and Strategy**
-**Start-Diamond**  
-The game track requires IR sensors for a majority of the path. For our purposes, we have hard coded our encoder values right before the diamond path to get Romi to "turn off" line sensor mode. During this portion, Romi has been manually programmed to go forard at an effort of 30% for 1.5 seconds.   
+
+**Beginning: Start-Diamond**  
+The game track requires IR sensors for a majority of the path. For our purposes, we started the game track by the use of line following with our IR sensor. We then hard coded our encoder values in the area right before the diamond path to get Romi to "turn off" line sensor mode. Once this new mode is started, Romi has been manually programmed to go forard at an effort of 30% for 1.5 seconds.   
+
 **Path Following: Checkpoints 1-4**  
-Once checkpoint 1 is hit, Romi then goes back to line sensing mode until Checkpoint 4, right before the grid. During this portion, Romi utilizes PID control in order to account for corrections and stay within the line.   
+Once Checkpoint 1 is hit, Romi then goes back to line sensing mode until the grid portion at Checkpoint 4. During this stretch between checkpoints 1-4, Romi utilizes PID control in order to account for corrections and stay within the path of the black line.  
+
 **Grid Portion: Checkpoints 4-5**  
-Additionally, once at Checkpoint 4, we switched to using the IMU in order to track our heading to keep our Romi straight (180 degrees away from our start position heading). We then hardcoded encoder tick counts that allowed our robot to go straight until the end of the grid where it would then pivot to reach Checkpoint 5.  
-**Grid Portion: Checkpoints 4-5**  
-Once Romi pivots at Checkpoint 5,our IR Sensors task will start again and the line will be followed up until the bump sensors are pressed once Romi makes contact with the wall. Once here, Romi will then pivot clockwise 90 degrees, use encoder ticks to go straight until the cup is hit, pivot counterclockwise 90 degrees, and use encoder ticks to go straight until a black line is read by our IR sensor. Once here, Romi will then rotate 90 degrees counterclockwise and use IR sensors until the finish line is reached.  
+Once at Checkpoint 4, we switched to using the IMU in order to track our heading to keep our Romi straight (180 degrees away from our start position heading). At this checkpoint, we then hardcoded encoder tick counts that allowed our robot to go straight until the end of the grid where it would then pivot to reach Checkpoint 5.  
+
+**Last Stretch: Checkpoint 5-Finish**  
+Once Romi pivots at Checkpoint 5, our IR Sensors task will start again and the line will be followed up until the bump sensors are pressed once Romi makes contact with the wall. Once here, Romi will then pivot clockwise 90 degrees, use encoder ticks to go straight until the 5s time deduction cup is hit, pivot counterclockwise 90 degrees, and use encoder ticks to go straight until a black line is read by our IR sensor. Once here, Romi will then rotate 90 degrees counterclockwise and use IR sensors until the finish line is reached.  
 
 ![Game Track](game_trackv3.png)
 
 ### **Results**
-A video depicting our best run is shown here. 
+A video depicting our best run is shown here. Meanwhile, during lab, we presented 3 trials in front of our class to demonstrate our Romi's capabilities of being able to complete the game path. However, as shown in the following table, we were unable to complete any trial successfully.  
+
 |Trial|Checkpoint 1|Checkpoint 2|Checkpoint 3|Checkpoint 4|Checkpoint 5|Total Time|Cups Hit|  
 |-----|------------|------------|------------|------------|------------|----------|--------|
 |1|0:00|0:00|0:00|0:00|0:00|0:00|0|
