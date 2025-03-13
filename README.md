@@ -47,7 +47,9 @@ This repository outlines our Romi term project that was completed by Roy Cabrera
 **Initial Steps**  
 To learn how to attach the attach the Shoe of Brian, nucleo, encoders, motors, and IMU, please refer to the attached [Romi Assembly](RomiAssembly.pdf) file that was handed to us during lab.
 
-**Attaching the IR Sensor**
+**Attaching the IR Sensor**  
+![IR Sensor](IR_Sensor.png) ![IR Sensor](IR_Sensor.png)
+
 **Attaching the Bump Sensor**
 
 ## **Wiring Diagram**  
