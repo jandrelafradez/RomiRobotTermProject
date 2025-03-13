@@ -1,7 +1,7 @@
 # **ME 405 Romi Term Project Portfolio**
 This repository outlines our Romi term project that was completed by Roy Cabrera and Jandre Lafradez during the Winter 2025 Quarter at Cal Poly, San Luis Obispo. Code files are attached above, with explanations of each file to follow later within this section. Hardware components are also attached with their links for anyone interested in recreating their own Romi project.   
   
-![Romi](diagonal.jpg)
+![Romi](diagonalv2.jpg)
 ## **Table of Contents**
 1) [Required Materials](#required-materials)  
 2) [Romi Assembly](#romi-assembly)  
