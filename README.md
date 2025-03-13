@@ -10,13 +10,13 @@ This repository outlines our Romi term project that was completed by Roy Cabrera
 5) [Finite State Machines](#finite-state-machines)  
 6) [Explanations of each class](#explanations-of-each-class)  
   a) [motor.py](#motor-py)    
-  b) [Encoder.py](#encoder.py)    
-  c) [cotask.py](#cotask.py)  
-  d) [task_share.py](#task_share.py)  
-  e) [centroid.py](#centroid.py)  
-  f) [linesensor.py](#linesensor.py)  
-  g) [bumper.py](#bumper.py)  
-  h) [main.py](#main.py)  
+  b) [Encoder.py](#encoder-py)    
+  c) [cotask.py](#cotask-py)  
+  d) [task_share.py](#task_share-py)  
+  e) [centroid.py](#centroid-py)  
+  f) [linesensor.py](#linesensor-py)  
+  g) [bumper.py](#bumper-py)  
+  h) [main.py](#main-py)  
 
 ## **Required Materials**  
 | Qty | Part Name |  
@@ -49,13 +49,13 @@ This repository outlines our Romi term project that was completed by Roy Cabrera
 ## **IR Sensor Class**
 ## **Finite State Machines**
 ## **Explanations of each class**
-### **motor py**
-### **Encoder.py**
-### **cotask.py**
-### **task_share.py**
-### **centroid.py**
-### **linesensor.py**
-### **bumper.py**
-### **main.py**
+### *motor py*
+### *Encoder py*
+### *cotask py*
+### *task_share py*
+### *centroid py*
+### *linesensor py*
+### *bumper py*
+### *main py*
 
 
