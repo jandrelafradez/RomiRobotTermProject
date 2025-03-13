@@ -16,7 +16,8 @@ This repository outlines our Romi term project that was completed by Roy Cabrera
   e) [centroid.py](#centroid-py)  
   f) [linesensor.py](#linesensor-py)  
   g) [bumper.py](#bumper-py)  
-  h) [main.py](#main-py)  
+  h) [main.py](#main-py)
+7) [Game Track and Results](#game-track-and-results)
 
 ## **Required Materials**  
 | Qty | Part Name |  
@@ -66,5 +67,6 @@ The *linesensor.py* file allows us to calibrate our IR sensors to differentiate 
 The *bumper.py* file contains a class that disables efforts to our motor once the buttons are depressed. This causes our Romi to pivot and is vital to the wall portion of the game track. 
 ### *main py*
 The *main.py* file is where all of the previously mentioned files are able to come together and communicate to one another. The user is also able to set Romi's base motor speed and adjust proportional-integral-derivative (PID) gain values in order to optomize Romi's performance for the game track.   
+##**Game Track and Results**
 
 
