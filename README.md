@@ -45,8 +45,8 @@ This repository outlines our Romi term project that was completed by Roy Cabrera
 ## **Wiring Diagram**
 ![Wiring Diagram](wiringdiagram.png)
 ## **State Transition Diagram**
-## **Motor Class**
-## **IR Sensor Class**
+### **Motor Class**
+### **IR Sensor Class**
 ## **Finite State Machines**
 ## **Explanations of each class**
 ### *motor py*
