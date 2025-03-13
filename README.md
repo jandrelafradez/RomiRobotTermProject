@@ -68,6 +68,6 @@ The *bumper.py* file contains a class that disables efforts to our motor once th
 ### *main py*
 The *main.py* file is where all of the previously mentioned files are able to come together and communicate to one another. The user is also able to set Romi's base motor speed and adjust proportional-integral-derivative (PID) gain values in order to optomize Romi's performance for the game track.   
 ##**Game Track and Results**  
-![Game Track](game_track.png)
+![Game Track](game_tracfefek.png)
 
 
