@@ -61,9 +61,35 @@ The following wiring diagram shows how we were able to wire our power, bump sens
 
 ![Wiring Diagram](wiringdiagram.png)
 ## **State Transition Diagram**
-### **Motor Class**
-### **IR Sensor Class**
+
+### **Shared Variables**
+| Variable | Data Stored |Purpose|  
+|----|------------------|----------------|  
+|eff_L|effort of left motor|sets the effort to the left motor based off error feedback|
+|eff_R|effort of right motor|sets the effort to the right motor based off error feedback|
+|test_state|Boolean value of 0,1, or 2|tells system what state it is on|
+|pos_L|current position of the left wheel|value is added to data array|
+|pos_R|current position of the right wheel|value is added to data array|
+|vel_L|current velocity of the left wheel|value is added to data array|
+|vel_R|current velocity of the right wheel|value is added to data array|
+|heading_share|current heading reading of IMU|value is added to data array|
+|initial_heading_share|initial heading at the starting line|used to compare the 180 degree heading difference at Checkpoint 4 (beginning portion of the grid|
+
 ## **Finite State Machines**
+**motor_task**  
+
+**user_task**  
+
+**sensor_task**  
+
+**encoder_task**  
+
+**imu_task**  
+
+**monitor_task**  
+
+**grid_task**  
+
 ## **Explanations of each class**
 ### *motor py*
 The *motor.py* file defines a class for running the Romi motors and setting the duty cycle for each motor. It enables the motors to spin according to the specified duty cycle.
