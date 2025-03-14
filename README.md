@@ -100,7 +100,7 @@ Once Romi pivots at Checkpoint 5, our IR Sensors task will start again and the l
 ![Game Track](game_trackv3.png)
 
 ### **Results**
-A video depicting our best run is shown here. Meanwhile, during lab, we presented 3 trials in front of our class to demonstrate our Romi's capabilities of being able to complete the game path. However, as shown in the following table, we were unable to complete any trial successfully.  
+A video depicting our best run is shown [here](Best_Game_Track_Run.mov). Meanwhile, during lab, we presented 3 trials in front of our class to demonstrate our Romi's capabilities of being able to complete the game path. However, as shown in the following table, we were unable to complete any trial successfully.  
 
 |Trial|Checkpoint 1|Checkpoint 2|Checkpoint 3|Checkpoint 4|Checkpoint 5|Total Time|Cups Hit|  
 |-----|------------|------------|------------|------------|------------|----------|--------|
