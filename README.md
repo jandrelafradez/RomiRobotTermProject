@@ -104,9 +104,12 @@ A video depicting our best run is shown here. Meanwhile, during lab, we presente
 
 |Trial|Checkpoint 1|Checkpoint 2|Checkpoint 3|Checkpoint 4|Checkpoint 5|Total Time|Cups Hit|  
 |-----|------------|------------|------------|------------|------------|----------|--------|
-|1|0:00|0:00|0:00|0:00|0:00|0:00|0|
-|2|0:00|0:00|0:00|0:00|0:00|0:00|0|
-|3|0:00|0:00|0:00|0:00|0:00|0:00|0|
+|1|5.81|N/A|N/A|N/A|N/A|N/A|0|
+|2|6.03|11.11|16.63|19.68|N/A|N/A|0|
+|3|N/A|N/A|N/A|N/A|N/A|N/A|0|
+|PB*|5.39|10.17|14.84|17.89|N/A|N/A|0|    
+
+*Personal Best
 
 
 
