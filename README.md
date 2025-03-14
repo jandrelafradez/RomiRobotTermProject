@@ -100,7 +100,7 @@ Once Romi pivots at Checkpoint 5, our IR Sensors task will start again and the l
 ![Game Track](game_trackv3.png)
 
 ### **Results**
-A video depicting our best run is shown [here](https://www.youtube.com/watch?v=51YOCL-ghLs). Meanwhile, during lab, we presented 3 trials in front of our class to demonstrate our Romi's capabilities of being able to complete the game path. However, as shown in the following table, we were unable to complete any trial successfully.  
+A video depicting our personal best run is shown [here](https://www.youtube.com/watch?v=51YOCL-ghLs). While this run was ultimately short of the finishline, it was the most success run we had, arriving to an end right before Checkpoint 5 at the end of the grid. Meanwhile, during lab, we presented three trials in front of our class to demonstrate our Romi's capabilities of being able to complete the game path. However, as shown in the following table, we were unable to complete any trial successfully.  
 
 |Trial|Checkpoint 1|Checkpoint 2|Checkpoint 3|Checkpoint 4|Checkpoint 5|Total Time|Cups Hit|  
 |-----|------------|------------|------------|------------|------------|----------|--------|
@@ -109,7 +109,10 @@ A video depicting our best run is shown [here](https://www.youtube.com/watch?v=5
 |3|N/A|N/A|N/A|N/A|N/A|N/A|0|
 |PB*|5.39|10.17|14.84|17.89|N/A|N/A|0|    
 
-*Personal Best
+*Personal Best  
+
+### **Recap**  
+While we were unable to complete the course, we were glad to have made the amount of progress that we ended up making. During our trial runs, Romi was inconsistent in terms of which checkpoint it would end at, which was not an issue the night before where we consistenly ended right before Checkpoint 5 at the end of the grid. Throughout this project we grew quick to learn how impactful battery voltage played in terms of the performance of our Romi. We discovered that different battery voltages required different PID values for our feedback control in our line sensor, which was very frustrating during testing. To combat this, a voltage divider could have been made, but we ultimately decided to not go with that route due to the time crunch we had. Additionally, we also did not implement Bluetooth with our Romi due to the time crunch. Nonethless, despite its ups and downs, this project was fun and it was a great experience seeing how quick other student groups were able to get their Romis to follow the gametrack successfully. 
 
 
 
