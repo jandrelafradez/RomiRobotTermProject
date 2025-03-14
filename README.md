@@ -45,12 +45,15 @@ This repository outlines our Romi term project that was completed by Roy Cabrera
 
 ## **Romi Assembly**
 **Initial Steps**  
-To learn how to attach the attach the Shoe of Brian, nucleo, encoders, motors, and IMU, please refer to the attached [Romi Assembly](RomiAssembly.pdf) file that was handed to us during lab.
+To learn how to connect and wire the Shoe of Brian, nucleo, encoders, motors, and IMU, please refer to the attached [Romi Assembly](RomiAssembly.pdf) file that was handed to us during lab by our professor, Charlie Refvem. Please refer to the [Wiring Diagram](#wiring-diagram) for wiring guidelines. 
 
 **Attaching the IR Sensor**  
-![IR Sensor](IR_Sensor.png) ![IR Sensor](IR_Sensor.png)
+For our IR sensor, we selected the 8-channel, 8-pitch option, as it provided sufficient coverage for our path width and featured an analog output. To attach the sensor to our Romi, we first soldered headers to create connection points for our wiring. We then secured the sensor to the front middle portion of the robot using two M2.5x8 standoffs, two M2.5x8mm head screws, and two M2.5 nylon washers. Ground and voltage were wired to our Nucleo. To maximize sensor utilization while minimizing wiring complexity, we connected channels 1, 3, 5, 7, 9, 11, 13, and 15. As previously mentioned, please refer to the [Wiring Diagram](#wiring-diagram) for wiring guidelines. 
 
-**Attaching the Bump Sensor**
+![IR Sensor](IR_Sensor.png) ![IR Sensor on Romi](Romi_IR_Sensor.jpg) 
+
+**Attaching the Bump Sensor**  
+Mounting the bump sensors proved challenging due to interference from the IR sensor and IMU, which were already positioned on the robot. Initially, the limited space made it difficult to secure the sensors without obstructing other components. To resolve this, we used four M2.5x10mm standoffs and screws to elevate the bump sensors, ensuring they were properly mounted without interfering with the IR sensor or IMU. This adjustment allowed for a secure fit while maintaining the functionality of all components. Once mounted, we then wired ground and the remaining bumper pins. Once agian, please refer to the [Wiring Diagram](#wiring-diagram) for wiring guidelines.  
 
 ## **Wiring Diagram**  
 The following wiring diagram shows how we were able to wire our power, bump sensors, IR sensor, IMU, encoders, and motors to our Nucleo L476RG. Please note that for ease of view, each connected part has its own respective color. However, ground and power remain black and red for each part it applies to.  
