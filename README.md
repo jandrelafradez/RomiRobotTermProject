@@ -15,8 +15,7 @@ This repository outlines our Romi term project that was completed by Roy Cabrera
   d) [task_share.py](#task_share-py)  
   e) [centroid.py](#centroid-py)  
   f) [linesensor.py](#linesensor-py)  
-  g) [bumper.py](#bumper-py)  
-  h) [main.py](#main-py)
+  g) [main.py](#main-py)
 7) [Game Track and Results](#game-track-and-results)
 
 ## **Required Materials**  
@@ -78,24 +77,29 @@ The *task_share.py* file depicts a class that allows share and queue variables t
 The *centroid.py* file contains a class that allows our infared (IR) sensors to create a centroid in order to calculate where the middle of the black line is at while our Romi follows the game track. 
 ### *linesensor py*
 The *linesensor.py* file allows us to calibrate our IR sensors to differentiate between white and black colors. It also computes an error based off our PID values that were determined by the user and the differentiation from the centroid. This error allows for motor speed for each wheel to be corrected in order to keep Romi on a line. 
-### *bumper py*
-The *bumper.py* file contains a class that disables efforts to our motor once the buttons are depressed. This causes our Romi to pivot and is vital to the wall portion of the game track. 
 ### *main py*
 The *main.py* file is where all of the previously mentioned files are able to come together and communicate to one another. The user is also able to set Romi's base motor speed and adjust proportional-integral-derivative (PID) gain values in order to optomize Romi's performance for the game track.   
 ## **Game Track and Results**
 ### **Game Track and Strategy**
 
+**Pre-Track Calibration**  
+Prior to putting Romi on the track, we had to calibrate the IR sensors to make line following possible. This was done by placing Romi on any white portion of the track, letting Romi calibrate white for 3 seconds, putting Romi into the calibration corner on the bottom right corner of the track, and letting Romi calibrate black for another 3 seconds. Once calibrated, Romi was placed on the starting line where our initial heading value is taken (this is important for the grid portion part of the game track). Romi then starts once the user presses "1" on their laptop. 
+
 **Beginning: Start-Diamond**  
-The game track requires IR sensors for a majority of the path. For our purposes, we started the game track by the use of line following with our IR sensor. We then hard coded our encoder values in the area right before the diamond path to get Romi to "turn off" line sensor mode. Once this new mode is started, Romi has been manually programmed to go forard at an effort of 30% for 1.5 seconds.   
+The game track heavily relies on IR sensors for navigation along most of the path, utilizing a proportional only control system to keep Romi on course. To initiate movement, we implemented line following using the IR sensors with a **Kp value of 4.5**. However, just before reaching the diamond path, we transitioned Romi out of line-following mode by hardcoding a specific range of values for our **left encoder ticks, which was in a range of 30-37**. In this new mode, Romi is manually programmed to move forward at 20% effort to both wheels for 2.25 seconds, ensuring precise navigation through the designated section.
 
 **Path Following: Checkpoints 1-4**  
-Once Checkpoint 1 is hit, Romi then goes back to line sensing mode until the grid portion at Checkpoint 4. During this stretch between checkpoints 1-4, Romi utilizes PID control in order to account for corrections and stay within the path of the black line.  
+Once Checkpoint 1 is hit, Romi then goes back to line sensing mode until the grid portion at Checkpoint 4, again with a **Kp value of 4.5**. During this stretch between checkpoints 1-4, we found our robot to be very smooth with its line following capabilities. 
 
 **Grid Portion: Checkpoints 4-5**  
-Once at Checkpoint 4, we switched to using the IMU in order to track our heading to keep our Romi straight (180 degrees away from our start position heading). At this checkpoint, we then hardcoded encoder tick counts that allowed our robot to go straight until the end of the grid where it would then pivot to reach Checkpoint 5.  
+At Checkpoint 4, we transitioned from line following to a grid-based navigation task, utilizing the IMU to maintain a straight heading, precisely 180 degrees from our starting position. At this point, we employed a similar approach to the diamond path, programming Romi to move forward based on a specific **left encoder reading (110 counts), a set effort of 20%, and a duration of 2.5 seconds.**  
+
+However, this marked the last successful checkpoint we achieved. We encountered an issue preventing Romi from switching into Test State 2, which was required to enable the grid-following task. As a result, Romi was unable to execute the necessary pivot at the end of the grid at Checkpoint 5.
 
 **Last Stretch: Checkpoint 5-Finish**  
-Once Romi pivots at Checkpoint 5, our IR Sensors task will start again and the line will be followed up until the bump sensors are pressed once Romi makes contact with the wall. Once here, Romi will then pivot clockwise 90 degrees, use encoder ticks to go straight until the 5s time deduction cup is hit, pivot counterclockwise 90 degrees, and use encoder ticks to go straight until a black line is read by our IR sensor. Once here, Romi will then rotate 90 degrees counterclockwise and use IR sensors until the finish line is reached.  
+As mentioned earlier, we were unable to progress past the grid portion. Consequently, everything outlined below details our intended plan for guiding Romi to the finish line.  
+
+After pivoting at Checkpoint 5, Romi would re-engage its IR sensor task to resume line following until its bump sensors detect contact with the wall. At this point, Romi would execute a 90-degree clockwise pivot using the IMU heading. Encoder ticks would then be used to drive forward until making contact with the 5-second time deduction cup, followed by a 90-degree counterclockwise pivot via the IMU. From there, encoder ticks would again be used to move straight until an IR sensor detects a black line. At this detection point, Romi would perform another 90-degree counterclockwise pivot using the IMU heading before relying on IR sensors once more to navigate to the finish line.
 
 ![Game Track](game_trackv3.png)
 
