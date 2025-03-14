@@ -8,7 +8,7 @@ This repository outlines our Romi term project that was completed by Roy Cabrera
 3) [Wiring Diagram](#wiring-diagram)  
 4) [State Transition Diagram](#state-transition-diagram)  
 5) [Finite State Machines](#finite-state-machines)  
-6) [Explanations of each class](#explanations-of-each-class)  
+6) [Explanations of each py file](#explanations-of-each-py-file)  
   a) [motor.py](#motor-py)    
   b) [Encoder.py](#encoder-py)    
   c) [cotask.py](#cotask-py)  
@@ -76,21 +76,43 @@ The following wiring diagram shows how we were able to wire our power, bump sens
 |initial_heading_share|initial heading at the starting line|used to compare the 180 degree heading difference at Checkpoint 4 (beginning portion of the grid|
 
 ## **Finite State Machines**
-**motor_task**  
+### *motor_task*  
+The motor task bounces around 2 states. When Romi is in test state 1 or 2, it is running; however, it is in idle mode when test state is 0.  
+![motor_task](motor_task_fsm.png)
 
-**user_task**  
+### *user_task*  
+The user task is what allows Romi to know whether to run or not. When the user presses 1 on the keyboard, Romi enters test state 1 and starts its run.  
+![user_task](user_task_fsm.png)
 
-**sensor_task**  
+### *sensor_task*  
+We have decided to include two FSM's for our IR sensor task: one for what's happening within the *linesensor.py* file when the centroid is being created and another for what's happening in the main code.  
 
-**encoder_task**  
+In order to successfully achieve PID control, each of our 8 outputs on our sensor collect readings based off light reflectivity (high for black and low for white). From this, a centroid is collected and errors are computed based off inline Romi is with the path. From there, the motor efforts for each wheel and then corrected to account for these errors.  
 
-**imu_task**  
+Since we were unable to successfully continue through the diamond path with just IR sensing (this will be discussed more in the [Game Track and Results](#game-track-and-results) ) section, we hardcoded some values that allowed or Romi to manually drive forward during the duration of 30-37 left encoder position ticks. If our position is out of this range, Romi will continue to use line following based off the IR sensor.  
+![sensor_calc__task](sensor_calc_task_fsm.png)
+![sensor_task](sensor_task_fsm.png)
 
-**monitor_task**  
+### *encoder_task*
 
-**grid_task**  
+The encoder task allows us to collect position, velocity, and acceleration when Romi is running. Once Romi is turned off, our data values are reset back to 0.  
+![encoder_task](encoder_task_fsm.png)
 
-## **Explanations of each class**
+### *imu_task*  
+
+The IMU task acts in a similar way to the encoder task, but it collects our heading position instead.  
+![imu_task](imu_task_fsm.png)
+
+### *monitor_task*  
+
+ The monitor tasks measures the initial heading at the starting line. This initial heading value is then compared to the heading value right before the grid, which should be at about 180 degrees. This allows us to switch our Romi into test state 2 and thus turn on grid mode.  
+![monitor_task](monitor_task_fsm.png)
+
+### *grid_task*  
+
+In the grid task, Romi is designed to go straight as long as the grid duration time is greater than the elapsed time. However, once the grid duration was less than the elapsed time, Romi would then stop moving as preparation to pivot at the end of the grid into Checkpoint 5.   
+![grid_task](grid_task_fsm.png)
+## **Explanations of each py file**
 ### *motor py*
 The *motor.py* file defines a class for running the Romi motors and setting the duty cycle for each motor. It enables the motors to spin according to the specified duty cycle.
 ### *Encoder py*
@@ -99,8 +121,6 @@ The *encoder.py* file contains the class to read the encoder of both the left an
 The *cotask.py* file contains the class and the methods to run the scheduler, which runs the tasks based on the specified period and priority of each task specified by the user that were described in the [State Transition Diagram](#state-transition-diagram) portion previously mentioned. These periods and priorities are also set by the user in the [main py](#main-py) file.
 ### *task_share py*
 The *task_share.py* file depicts a class that allows share and queue variables to be created. This allows data to be shared between share the wheels and user control tasks.
-### *centroid py*
-The *centroid.py* file contains a class that allows our infared (IR) sensors to create a centroid in order to calculate where the middle of the black line is at while our Romi follows the game track. 
 ### *linesensor py*
 The *linesensor.py* file allows us to calibrate our IR sensors to differentiate between white and black colors. It also computes an error based off our PID values that were determined by the user and the differentiation from the centroid. This error allows for motor speed for each wheel to be corrected in order to keep Romi on a line. 
 ### *main py*
