@@ -53,7 +53,7 @@ For our IR sensor, we selected the 8-channel, 8-pitch option, as it provided suf
 ![IR Sensor](IR_Sensor.png) ![IR Sensor on Romi](Romi_IR_Sensor.jpg) 
 
 **Attaching the Bump Sensor**  
-Mounting the bump sensors proved challenging due to interference from the IR sensor and IMU, which were already positioned on the robot. Initially, the limited space made it difficult to secure the sensors without obstructing other components. To resolve this, we used four M2.5x10mm standoffs and screws to elevate the bump sensors, ensuring they were properly mounted without interfering with the IR sensor or IMU. This adjustment allowed for a secure fit while maintaining the functionality of all components. Once mounted, we then wired ground and the remaining bumper pins. Once agian, please refer to the [Wiring Diagram](#wiring-diagram) for wiring guidelines.  
+Mounting the bump sensors proved challenging due to interference from the IR sensor and IMU, which were already positioned on the robot. Initially, the limited space made it difficult to secure the sensors without obstructing other components. To resolve this, we used four M2.5x10mm standoffs and screws to elevate the bump sensors, ensuring they were properly mounted without interfering with the IR sensor or IMU. This adjustment allowed for a secure fit while maintaining the functionality of all components. Once mounted, we then wired ground and the remaining bumper pins. Once again, please refer to the [Wiring Diagram](#wiring-diagram) for wiring guidelines.  
 
 ![Bump Sensors](Bump_Sensor.png) ![Bump Sensors on Romi](Romi_Bump_Sensor.jpg) 
 
