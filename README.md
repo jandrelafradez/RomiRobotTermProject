@@ -61,6 +61,8 @@ The following wiring diagram shows how we were able to wire our power, bump sens
 ![Wiring Diagram](wiringdiagram.png)
 ## **State Transition Diagram**
 
+The following state transiiton diagram is a visual representation of how each of our states within our [main.py](main.py) file speak to one another. The shared variables table also explains what each variable within the state transition diagram represents. To learn more about what each tasks is in charge of, please refer to the [Finite State Machines](#finite-state-machines) portion of this repository.
+![State Transition Diagram](State_Transition_Diagram.png)
 ### **Shared Variables**
 | Variable | Data Stored |Purpose|  
 |----|------------------|----------------|  
